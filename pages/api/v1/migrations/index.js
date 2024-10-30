@@ -6,6 +6,7 @@ export default async function migrations(request, response) {
   const allowedMethods = ["GET", "POST"];
   if (!allowedMethods.includes(request.method)) {
     return response.status(405).json({
+      //405 metodo não permitido
       error: `Method "${request.method}" not allowed`,
     });
   }
@@ -44,8 +45,6 @@ export default async function migrations(request, response) {
 
       return response.status(200).json(migratedMigrations);
     }
-
-    return response.status(405).end(); //metodo não permitido
   } catch (error) {
     console.error(error);
     throw error;
