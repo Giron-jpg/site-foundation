@@ -6,9 +6,5 @@ function Home() {
   );
 }
 
-function teste() {
-  return "teste";
-}
-
 export default Home; /* a partir deste componente
  serão chamados outras funções*/
