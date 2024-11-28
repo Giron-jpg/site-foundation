@@ -1,9 +1,5 @@
 function Home() {
-  return (
-    <h1>
-      Um pequeno passo para o homem, mas um grande passo para a humanidade
-    </h1>
-  );
+  return <h1>Ao menos tente antes de desistir</h1>;
 }
 
 export default Home; /* a partir deste componente
